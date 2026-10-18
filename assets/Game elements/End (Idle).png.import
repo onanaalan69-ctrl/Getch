@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4wr5xemq43yn"
-path="res://.godot/imported/Blue.png-99b845350a8b7cb68c6cc5bba6d44eeb.ctex"
+uid="uid://b6oc0w2rodgbu"
+path="res://.godot/imported/End (Idle).png-4f1cfd6dcfdeb99241c3f95d4f619e04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Blue.png"
-dest_files=["res://.godot/imported/Blue.png-99b845350a8b7cb68c6cc5bba6d44eeb.ctex"]
+source_file="res://assets/Game elements/End (Idle).png"
+dest_files=["res://.godot/imported/End (Idle).png-4f1cfd6dcfdeb99241c3f95d4f619e04.ctex"]
 
 [params]
 

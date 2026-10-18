@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c55m4jp05koqq"
-path="res://.godot/imported/Fall (32x32).png-8f616bf27f9394cb6194389f95aa54ad.ctex"
+uid="uid://d1by5xfio2iia"
+path="res://.godot/imported/love-always-wins.png-5ab3659e0a05ea2a4224e6c7b0d8d3c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Fall (32x32).png"
-dest_files=["res://.godot/imported/Fall (32x32).png-8f616bf27f9394cb6194389f95aa54ad.ctex"]
+source_file="res://assets/Game elements/love-always-wins.png"
+dest_files=["res://.godot/imported/love-always-wins.png-5ab3659e0a05ea2a4224e6c7b0d8d3c7.ctex"]
 
 [params]
 

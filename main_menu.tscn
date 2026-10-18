@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bihgu0xrdouka"]
 
-[ext_resource type="Script" uid="uid://b4v6b6k7sdw2o" path="res://scenes/main_menu.gd" id="1_ekxnf"]
-[ext_resource type="Texture2D" uid="uid://b4wr5xemq43yn" path="res://Blue.png" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://b4v6b6k7sdw2o" path="res://main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://b4wr5xemq43yn" path="res://assets/Background/Blue.png" id="2_fu7sn"]
 
 [node name="MainMenu" type="Node" unique_id=958122707]
-script = ExtResource("1_ekxnf")
+script = ExtResource("1_7vrkn")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=640853350]
 texture_filter = 1
@@ -14,7 +14,7 @@ anchor_bottom = 1.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_l6cm7")
+texture = ExtResource("2_fu7sn")
 stretch_mode = 1
 
 [node name="Label" type="Label" parent="." unique_id=1002727463]
