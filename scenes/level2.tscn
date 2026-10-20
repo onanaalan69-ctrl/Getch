@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://bho7vub3o0afl" path="res://game_manager.gd" id="5_qulpo"]
 [ext_resource type="PackedScene" uid="uid://dl1fq807y7iic" path="res://scenes/Finish.tscn" id="6_6ep0u"]
 [ext_resource type="PackedScene" uid="uid://bihgu0xrdouka" path="res://main_menu.tscn" id="7_bo4dx"]
+[ext_resource type="Script" uid="uid://bb584frlgt2my" path="res://scenes/pause.gd" id="8_hrcei"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("2_hrcei")
@@ -250,6 +251,63 @@ text = "Points: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Pause" type="Node" parent="UI" unique_id=1509074249]
+script = ExtResource("8_hrcei")
+
+[node name="Pause Panel" type="Panel" parent="UI/Pause" unique_id=2005980862]
+unique_name_in_owner = true
+visible = false
+anchors_preset = -1
+anchor_left = -0.019965278
+anchor_top = -0.03549383
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="UI/Pause/Pause Panel" unique_id=1110585018]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -166.0
+offset_top = 108.0
+offset_right = 178.0
+offset_bottom = 219.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 60
+text = "PAUSE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Pause/Pause Panel" unique_id=1708505963]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -234.0
+offset_top = -52.0
+offset_right = 256.0
+offset_bottom = 109.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="Resume" type="Button" parent="UI/Pause/Pause Panel/VBoxContainer" unique_id=1317737728]
+process_mode = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "RESUME"
+
+[node name="Button2" type="Button" parent="UI/Pause/Pause Panel/VBoxContainer" unique_id=471592239]
+process_mode = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Main Menu"
+
 [node name="collectable" parent="." unique_id=31209296 instance=ExtResource("4_rmy57")]
 position = Vector2(232, 484)
 
@@ -286,3 +344,6 @@ position = Vector2(2684, 235)
 [node name="Area2D" parent="." unique_id=1449699789 instance=ExtResource("6_6ep0u")]
 position = Vector2(3176, 341)
 target_level = ExtResource("7_bo4dx")
+
+[connection signal="pressed" from="UI/Pause/Pause Panel/VBoxContainer/Resume" to="UI/Pause" method="_on_resume_pressed"]
+[connection signal="pressed" from="UI/Pause/Pause Panel/VBoxContainer/Button2" to="UI/Pause" method="_on_button_2_pressed"]

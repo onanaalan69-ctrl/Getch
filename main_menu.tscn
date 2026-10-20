@@ -1,7 +1,23 @@
 [gd_scene format=3 uid="uid://bihgu0xrdouka"]
 
 [ext_resource type="Script" uid="uid://b4v6b6k7sdw2o" path="res://main_menu.gd" id="1_7vrkn"]
-[ext_resource type="Texture2D" uid="uid://b4wr5xemq43yn" path="res://assets/Background/Blue.png" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://blw3evsu0to2t" path="res://Yellow.png" id="2_jix8l"]
+[ext_resource type="AudioStream" uid="uid://dogv3wqlbrhsv" path="res://scenes/magorynet-tkucza-drumsofdawn.mp3" id="3_glbon"]
+[ext_resource type="Texture2D" uid="uid://cub1rn8i5ngst" path="res://Getch.png" id="4_nlkkf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qe12f"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qtwp"]
+bg_color = Color(0.019925632, 0.019925635, 0.019925613, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [node name="MainMenu" type="Node" unique_id=958122707]
 script = ExtResource("1_7vrkn")
@@ -14,22 +30,8 @@ anchor_bottom = 1.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_fu7sn")
+texture = ExtResource("2_jix8l")
 stretch_mode = 1
-
-[node name="Label" type="Label" parent="." unique_id=1002727463]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -120.0
-offset_top = 169.0
-offset_right = 132.0
-offset_bottom = 232.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 32
-text = "GETCH"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="Button" type="Button" parent="." unique_id=753979459]
 texture_filter = 1
@@ -45,6 +47,7 @@ offset_bottom = 33.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_qe12f")
 text = "Level 1"
 
 [node name="Button2" type="Button" parent="." unique_id=35418214]
@@ -54,14 +57,34 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 96.0
-offset_top = -13.0
-offset_right = 296.0
-offset_bottom = 36.0
+offset_left = 98.0
+offset_top = -17.0
+offset_right = 298.0
+offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
 text = "Level 2"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1747416312]
+texture_filter = 1
+position = Vector2(15, 18)
+stream = ExtResource("3_glbon")
+volume_db = 1.164
+autoplay = true
+
+[node name="Title" type="TextureRect" parent="." unique_id=1721682722]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -191.0
+offset_top = 85.0
+offset_right = 639.0
+offset_bottom = 781.0
+grow_horizontal = 2
+scale = Vector2(0.48000002, 0.27999985)
+texture = ExtResource("4_nlkkf")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

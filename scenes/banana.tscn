@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://dcyjj6j0fec30"]
+
+[ext_resource type="Texture2D" uid="uid://cwipwsfh0xtmk" path="res://assets/Game elements/Bananas.png" id="1_hilkf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_drpa1"]
+radius = 22.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a45fu"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36b2i"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bkyw"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srj6n"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gbb8"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bp77k"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpx1l"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bdl2a"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8p0x"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1gf0"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0odt"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2tnfo"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xa20p"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8n58"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dscxm"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s52br"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3linc"]
+atlas = ExtResource("1_hilkf")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f31uk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a45fu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36b2i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bkyw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srj6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gbb8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bp77k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpx1l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bdl2a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s8p0x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1gf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0odt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2tnfo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xa20p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8n58")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dscxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s52br")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3linc")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="Banana" type="Area2D" unique_id=56558]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=953875207]
+position = Vector2(89, 88)
+shape = SubResource("CircleShape2D_drpa1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=614194267]
+texture_filter = 1
+position = Vector2(89, 89)
+scale = Vector2(2.8281248, 2.7499998)
+sprite_frames = SubResource("SpriteFrames_f31uk")
+autoplay = "default"
