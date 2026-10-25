@@ -4,22 +4,18 @@ extends Node
 
 var points = 0
 var banana = 0
-var lives = 3
-
-func decrease_lives():
-	lives -= 1
-	print(lives)
-	if (lives == 0):
-		get_tree().reload_current_scene()
+var max_bananas = 8
 
 func add_cherries():
 	points += 1
 	print(points)
-	points_label.text = "Points: " + str(points)
+	points_label.text = "        " + str(points)
 	
 func add_bananas():
 	banana += 1
 	print(banana)
-	bananas.text = "Bananas: " + str(banana) 
-	
-	
+	bananas.text = "        " + str(banana) 
+
+func _process(delta: float) -> void:
+	if banana == max_bananas:
+		get_tree().change_scene_to_file("res://scenes/bonus.tscn")
