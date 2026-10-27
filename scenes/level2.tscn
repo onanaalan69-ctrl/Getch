@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b53lra35ih8c5"]
 
-[ext_resource type="Texture2D" uid="uid://bw11p6d3ilqm" path="res://assets/Background/Green.png" id="1_6ep0u"]
+[ext_resource type="Texture2D" uid="uid://b4wr5xemq43yn" path="res://assets/Background/Blue.png" id="1_xa7n4"]
 [ext_resource type="Texture2D" uid="uid://cyevwth2j4u2s" path="res://assets/Terrain/Terrain (16x16).png" id="2_hrcei"]
 [ext_resource type="PackedScene" uid="uid://bl5pxjlegc6q" path="res://main_character.tscn" id="3_xa7n4"]
 [ext_resource type="PackedScene" uid="uid://dxqwpeupq45s2" path="res://scenes/collectable.tscn" id="4_rmy57"]
@@ -334,7 +334,7 @@ animations = [{
 texture_filter = 1
 offset_right = 4277.0
 offset_bottom = 635.0
-texture = ExtResource("1_6ep0u")
+texture = ExtResource("1_xa7n4")
 stretch_mode = 1
 
 [node name="Tilemap" type="TileMap" parent="ScenesObjects" unique_id=463346018]

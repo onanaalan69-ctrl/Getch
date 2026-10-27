@@ -5,6 +5,7 @@ extends Node
 var points = 0
 var banana = 0
 var max_bananas = 8
+var max_cherries = 56
 
 func add_cherries():
 	points += 1
@@ -19,3 +20,5 @@ func add_bananas():
 func _process(delta: float) -> void:
 	if banana == max_bananas:
 		get_tree().change_scene_to_file("res://scenes/bonus.tscn")
+	#elif points == max_cherries:
+		#get_tree().change_scene_to_file()
