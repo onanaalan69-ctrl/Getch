@@ -7,6 +7,7 @@ What if you could play a platformer that is in *continuous development*? See my 
 
 > ## Link to [play](https://onanaalan69-ctrl.itch.io/getch) the game!
 
+Getch is a 2D platformer game that I built to level up my GameDev skills (as it is my first game). The story is quite simple: collect all the fruits to unlock special levels. Most people won't ever see some of them. Make sure to play them all and have fun. The difficulty level is quite high, so be proud of yourself if you complete a single level!
 ---------------------------------------------------------------------------------------
 How to launch the game?
 ===============================================================================================
