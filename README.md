@@ -1,6 +1,8 @@
 GETCH
 ===============================================================================================
 
+<img width="1162" height="646" alt="image" src="https://github.com/user-attachments/assets/9dcb926d-6442-4a67-9db5-57167d9f36d4" />
+
 What if you could play a platformer that is in *continuous development*? See my progress through the development of this game, and enjoy the old, good, and simple hops of 2D platformer games :)
 
 > ## Link to [play](https://onanaalan69-ctrl.itch.io/getch) the game!
